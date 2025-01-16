@@ -1,5 +1,5 @@
 ---
-title: Effects of night-time warming on temperate ectotherm reproduction: potential fitness benefits of climate change for side-blotched lizards
+title: Effects of night-time warming on temperate ectotherm reproduction - potential fitness benefits of climate change for side-blotched lizards
 author: clarke-nat
 publication: true
 journal: Journal of Experimental Biology
