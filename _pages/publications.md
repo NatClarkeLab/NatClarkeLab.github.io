@@ -8,6 +8,7 @@ title: "Publications"
 {% for article in posts %}
 {% if article.publication %}
 ### {{article.title}}
+### {{article.year}}
 {% assign length = article.authors | size %}
 {% assign i = 2 %}
 {% for author in article.authors %}{{author}}{%if i < length%}, {%elsif i == length%}{%if length > 2%},{%endif%} and {%else%}{%endif%}{%assign i = i | plus: 1%}{% endfor %}
@@ -26,5 +27,5 @@ PDB{%if length > 1%}s{%endif%}: {% for pdb in article.pdbs %} [{{pdb}}](https://
 
 # All articles and reviews
 
-[Pubmed](https://pubmed.ncbi.nlm.nih.gov/?term=D%20Nathaniel%20Clarke%20or%20Donald%20N%20Clarke&sort=date)
+[Pubmed](https://pubmed.ncbi.nlm.nih.gov/?term=D%20Nathaniel%20Clarke%20or%20Donald%20N%20Clarke&sort=date)\
 [Google Scholar](https://scholar.google.com/citations?user=xFyjzfoAAAAJ&hl=en)
