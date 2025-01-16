@@ -24,7 +24,7 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "mint"
+minimal_mistakes_skin: "default"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -59,7 +59,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mangliklab/"
+      url: "https://github.com/NatClarkeLab/"
 
 defaults:
   # _posts
