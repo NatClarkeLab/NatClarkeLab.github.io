@@ -1,5 +1,6 @@
 ---
 title: The Evolutionary Origin of Epithelial Cell–Cell Adhesion Mechanisms
+year: 2013
 author: clarke-nat
 publication: true
 journal: Current Topics in Membranes
