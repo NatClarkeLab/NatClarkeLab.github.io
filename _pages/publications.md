@@ -27,3 +27,4 @@ PDB{%if length > 1%}s{%endif%}: {% for pdb in article.pdbs %} [{{pdb}}](https://
 # All articles and reviews
 
 [Pubmed](https://pubmed.ncbi.nlm.nih.gov/?term=D%20Nathaniel%20Clarke%20or%20Donald%20N%20Clarke&sort=date)
+[Google Scholar](https://scholar.google.com/citations?user=xFyjzfoAAAAJ&hl=en)
