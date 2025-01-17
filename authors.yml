@@ -16,6 +16,7 @@
 #  email:    first.last@ucsf.edu
 #  twitter:  ExampleHandle
 #  website:  https://example.com/
+#  gscholar:  full google scholar url
 
 clarke-nat:
   name:     Nat Clarke
@@ -26,6 +27,7 @@ clarke-nat:
   current:  true
   email:    natclarke@miami.edu
   twitter:  natclarke8
+  gscholar: https://scholar.google.com/citations?user=xFyjzfoAAAAJ&hl=en
 
 
 
