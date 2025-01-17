@@ -2,7 +2,8 @@
 permalink: /research/
 title: "Research"
 ---
-
+<i>Under construction<i>
+<!---
 {% assign interests = site.research | sort: "index" %}
 
 {% for interest in interests %}
@@ -19,3 +20,4 @@ title: "Research"
 
 {{ interest.content }}
 {% endfor %}
+--->
