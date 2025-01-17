@@ -1,5 +1,5 @@
 ---
-title: VitelloTag: a tool for high-throughput cargo delivery into oocytes
+title: VitelloTag - a tool for high-throughput cargo delivery into oocytes
 year: 2024
 author: clarke-nat
 publication: true
