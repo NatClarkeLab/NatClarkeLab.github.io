@@ -6,8 +6,8 @@ publication: true
 journal: Developmental Biology
 doi: 10.1016/j.ydbio.2018.10.022
 authors:
-- Paul J. Minor 1
-- D. Nathaniel Clarke 1
+- Paul J. Minor<sup>1</sup>
+- D. Nathaniel Clarke<sup>1</sup>
 - José M. Andrade López
 - Jens H. Fritzenwanker
 - Jessica Gray
