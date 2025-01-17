@@ -7,7 +7,7 @@ journal: Development
 doi: 10.1242/dev.202857
 authors:
 - D. Nathaniel Clarke<sup>*</sup>
-- Akshay Kane <sup>*</sup>
+- Akshay Kane<sup>*</sup>
 - Margherita Perillo 
 - Christopher J. Lowe 
 - S. Zachary Swartz 
