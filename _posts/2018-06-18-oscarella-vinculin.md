@@ -10,7 +10,7 @@ authors:
 - Sabine Pokutta
 - Jennyfer M. Mitchell
 - Jayanth V. Chodaparambil
-- D. Nathaniel Clarke‖
+- D. Nathaniel Clarke
 - W. James Nelson
 - William I. Weis
 - Scott A. Nichols
