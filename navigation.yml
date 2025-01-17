@@ -9,5 +9,3 @@ main:
     url: /posts/
   - title: "About"
     url: /about/
-  - title: "test"
-    url: /test/
