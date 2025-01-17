@@ -14,7 +14,8 @@ authors:
 abstract: "Delivering molecular tools into oocytes is essential for developmental and reproductive biology. Microinjection, the conventional method, is equipment intensive, often technically challenging and has a low yield, and is impractical in species with delicate oocytes or restricted spawning seasons. To overcome these limitations, we developed VitelloTag, a cost-effective, high-throughput system using vitellogenin-derived fusion proteins to enable efficient cargo delivery via receptor-mediated endocytosis. We demonstrate its utility by delivering Cas9/sgRNA complexes in two distantly related species for gene knockout."
 
 tags:
-  - FIXIT
+  - Article
+  - Method
 ---
 
 We recently published ["{{page.title}}"](https://doi.org/{{page.doi}}) in *{{page.journal}}*.
