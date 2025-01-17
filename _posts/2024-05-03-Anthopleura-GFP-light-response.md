@@ -6,9 +6,9 @@ publication: true
 journal: Integrative and Comparative Biology
 doi: 10.1093/icb/icae024
 authors:
-- Ethan G. Staats<sup>1</sup>
-- D. Nathaniel Clarke<sup>1</sup>
-- Vicki Buchsbaum Pearse<sup>1</sup>
+- Ethan G. Staats<sup>*</sup>
+- D. Nathaniel Clarke<sup>*</sup>
+- Vicki Buchsbaum Pearse<sup>*</sup>
 - Kelly Govenar
 - Evelien De Meulenaere
 - Dimitri D. Deheyn
