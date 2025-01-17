@@ -1,26 +1,8 @@
-Getting started
-===============
+Clarke Lab website
+==================
 
- 1. Install all [prerequisites](https://jekyllrb.com/docs/installation/)
- 1. Install the jekyll and bundler gems
-    ```
-    gem install jekyll bundler
-    ```
- 1. Clone this repository
-    ```
-    git clone git@github.com:mangliklab/mangliklab.github.io.git
-    ```
- 1. Change into your new directory
-    ```
-    cd mangliklab.github.io
-    ```
- 1. Build the site and make it available on a local server
-    ```
-    bundle exec jekyll serve
-    ```
- 1. Browse to `http://localhost:4000`
+A work in progress...
 
+Inspired by: https://fraserlab.com/2024/04/22/IT-suggestions-for-new-faculty/
+and also: https://github.com/mangliklab/mangliklab.github.io
 
-Please test your changes locally before pushing.
-
-See lab manual for instructions on how to add yourself to the website!
