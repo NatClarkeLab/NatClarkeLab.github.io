@@ -12,19 +12,7 @@ title: "Publications"
 {% assign i = 2 %}
 {% for author in article.authors %}{{author}}{%if i < length%}, {%elsif i == length%}{%if length > 2%},{%endif%} and {%else%}{%endif%}{%assign i = i | plus: 1%}{% endfor %}
 
-<span style="display: inline-flex; align-items: center;">
 {%if article.doi%}[*{{article.journal}}*](https://doi.org/{{article.doi}}){%else%}*{{article.journal}}*{%endif%}, {{article.year}} 
-
-<!-- Altmetric Badge -->
-{% if article.doi %}
-  <span style="margin-left: 10px;">
-    <div class='altmetric-embed' data-badge-type='donut' data-doi="{{article.doi}}"></div>
-  </span>
-{% endif %}
-</span>
-<!-- Ensure Altmetric script is included -->
-<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-
 
 <!---
 {% if article.pdbs %}
