@@ -13,7 +13,7 @@ abstract: "Studies of morphology and developmental patterning in adult stages of
 
 tags:
   - Article
-  - Methods
+  - Method
 ---
 
 We recently published ["{{page.title}}"](https://doi.org/{{page.doi}}) in *{{page.journal}}*.
