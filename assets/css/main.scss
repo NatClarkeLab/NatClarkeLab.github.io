@@ -7,6 +7,7 @@ search: false
 
 $max-width: 100%;
 
+$background-color: black;
 $link-color: red;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
