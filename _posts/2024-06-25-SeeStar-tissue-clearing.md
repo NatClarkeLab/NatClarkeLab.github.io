@@ -1,5 +1,5 @@
 ---
-title: See-Star: a versatile hydrogel-based protocol for clearing large, opaque and calcified marine invertebrates
+title: See-Star - a versatile hydrogel-based protocol for clearing large, opaque and calcified marine invertebrates
 year: 2024
 author: clarke-nat
 publication: true
