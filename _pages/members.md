@@ -41,7 +41,7 @@ Twitter: [@{{ member.twitter }}](https://twitter.com/{{ member.twitter }})
 {% endif %}
 {% endfor %}
 
-
+<!---
 # Former members
 
 
@@ -61,7 +61,7 @@ Next: {{ member.next }}
 {% endunless %}
 {% endif %}
 {% endfor %}
-
+--->
 # Join the lab
 
 We are actively recruiting highly motivated graduate students and postdoctoral fellows interested in exploring questions related to the evolution of animal multicellularity, cell adhesion mechanisms, and embryonic morphogenesis.
