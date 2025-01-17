@@ -7,5 +7,7 @@ main:
     url: /members/
   - title: "News"
     url: /posts/
+  - title: "Join"
+    url: /join/
   - title: "Contact"
     url: /contact/
