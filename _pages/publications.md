@@ -25,7 +25,7 @@ PDB{%if length > 1%}s{%endif%}: {% for pdb in article.pdbs %} [{{pdb}}](https://
 {% endif %}
 {% endfor %}
 
-* = Authors contributed equally
+/* = Authors contributed equally
 
 # All articles and reviews
 
