@@ -31,6 +31,10 @@ Email: [{{ member.email }}](mailto:{{ member.email }})
 Twitter: [@{{ member.twitter }}](https://twitter.com/{{ member.twitter }})
 {% endif %}
 
+{% if member.bluesky %} 
+BlueSky: [@{{ member.bluesky }}](https://bsky.app/profile/{{ member.bluesky }}) 
+{% endif %}
+
 {% if member.gscholar %}
 [Google Scholar]({{ member.gscholar }})
 {% endif %}
