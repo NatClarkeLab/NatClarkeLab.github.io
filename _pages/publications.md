@@ -14,7 +14,7 @@ title: "Publications"
 {% assign i = 2 %}
 {% for author in article.authors %}{{author}}{%if i < length%}, {%elsif i == length%}{%if length > 2%},{%endif%} and {%else%}{%endif%}{%assign i = i | plus: 1%}{% endfor %}
 
-{%if article.doi%}[*{{article.journal}}*](https://doi.org/{{article.doi}})<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/nature.2012.9872"></div>{%else%}*{{article.journal}}*{%endif%}, {{article.year}} 
+{%if article.doi%}[*{{article.journal}}*](https://doi.org/{{article.doi}})[<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/nature.2012.9872"></div>]{%else%}*{{article.journal}}*{%endif%}, {{article.year}} 
 
 <!---
 {% if article.pdbs %}
