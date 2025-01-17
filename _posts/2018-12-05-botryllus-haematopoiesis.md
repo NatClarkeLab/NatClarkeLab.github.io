@@ -29,7 +29,7 @@ authors:
 abstract: "Haematopoiesis is an essential process that evolved in multicellular animals. At the heart of this process are haematopoietic stem cells (HSCs), which are multipotent and self-renewing, and generate the entire repertoire of blood and immune cells throughout an animal’s life1. Although there have been comprehensive studies on self-renewal, differentiation, physiological regulation and niche occupation in vertebrate HSCs, relatively little is known about the evolutionary origin and niches of these cells. Here we describe the haematopoietic system of <i>Botryllus schlosseri</i>, a colonial tunicate that has a vasculature and circulating blood cells, and interesting stem-cell biology and immunity characteristics. Self-recognition between genetically compatible <i>B. schlosseri</i> colonies leads to the formation of natural parabionts with shared circulation, whereas incompatible colonies reject each other3,4,7. Using flow cytometry, whole-transcriptome sequencing of defined cell populations and diverse functional assays, we identify HSCs, progenitors, immune effector cells and an HSC niche, and demonstrate that self-recognition inhibits allospecific cytotoxic reactions. Our results show that HSC and myeloid lineage immune cells emerged in a common ancestor of tunicates and vertebrates, and also suggest that haematopoietic bone marrow and the <i>B. schlosseri</i> endostyle niche evolved from a common origin."
 
 tags:
-  - FIXIT
+  - Article
 ---
 
 We recently published ["{{page.title}}"](https://doi.org/{{page.doi}}) in *{{page.journal}}*.
