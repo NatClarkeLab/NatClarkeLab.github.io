@@ -62,10 +62,10 @@ Next: {{ member.next }}
 {% endif %}
 {% endfor %}
 
-# Joining
+# Join the lab
 
 We are actively recruiting highly motivated graduate students and postdoctoral fellows interested in exploring questions related to the evolution of animal multicellularity, cell adhesion mechanisms, and embryonic morphogenesis.
 
-Interested students should apply to the U. Miami Biology graduate program.
+Interested students should apply to the University of Miami Biology graduate program.
 
 Postdoctoral candidates should contact Nat directly with a CV, research proposal, and three references.
