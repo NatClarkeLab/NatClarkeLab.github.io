@@ -4,7 +4,7 @@ year: 2018
 author: clarke-nat
 publication: true
 journal: Nature
-doi: doi.org/10.1038/s41586-018-0783-x
+doi: 10.1038/s41586-018-0783-x
 authors:
 - Benyamin Rosental
 - Mark Kowarsky
