@@ -1,10 +1,9 @@
 ---
-name: Functional modulation of transmembrane receptors
+name: New models for studying the base of the animal tree of life
 index: 3
-image: /assets/images/modulation.png
-image_alt: Protein function modulation
+image: /assets/images/choanocyte-chamber.gif
+image_alt: sponge choanocyte chamber
 ---
 
-​To attain the structural and biophysical goals outlined above, we utilize antibody fragments to stabilize transmembrane proteins in distinct conformations.
-We are developing [novel synthetic antibody fragment libraries](http://rdcu.be/GMPh) and expanding on existing protein engineering platforms to facilitate this process.
-In addition to enabling our structural efforts, we aim to utilize these antibody fragments to correlate structure at the microscopic level to function at the whole organism level.
+​Analysis of the innovations associated with animal origins has been hindered by the lack of model species in non-bilaterian phyla with toolkits for cellular and molecular biology. To address this problem, a long-term goal of our research is to develop new model species in diverse non-bilaterian groups, including placozoans, sponges and ctenophores, which represent the most basal branches of the animal tree of life.
+
