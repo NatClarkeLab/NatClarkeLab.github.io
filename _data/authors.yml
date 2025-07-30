@@ -8,7 +8,7 @@
 
 #lastname-firstname:
 #  name:     First Last
-#  bio:      Graduate student, Biophysics #lab position, appears in sidebar of every post
+#  bio:      Graduate student, Biology #lab position, appears in sidebar of every post
 #  fullbio:  "" #appears as the main text on the members page; new paragraphs require two blank lines
 #  avatar:   /assets/images/last-first.jpg #square headshot, ~500px and <300 kB
 #  member:   true
