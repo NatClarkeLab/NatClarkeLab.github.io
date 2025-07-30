@@ -1,6 +1,6 @@
 ---
 title: EGFR-dependent actomyosin patterning coordinates morphogenetic movements between tissues in <i>Drosophila melanogaster</i>
-year: 2024
+year: 2025
 author: clarke-nat
 publication: true
 journal: Developmental Cell
