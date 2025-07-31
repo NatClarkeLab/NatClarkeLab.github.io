@@ -17,6 +17,7 @@
 #  twitter:  ExampleHandle
 #  website:  https://example.com/
 #  gscholar:  full google scholar url
+#  CV:       /assets/CVs/last-first.pdf
 
 clarke-nat:
   name:     Nat Clarke
@@ -28,6 +29,7 @@ clarke-nat:
   email:    natclarke@miami.edu
   twitter:  natclarke8
   gscholar: https://scholar.google.com/citations?user=xFyjzfoAAAAJ&hl=en
+  CV:       /assets/CVs/clarke-nat.pdf
 
 
 
