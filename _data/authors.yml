@@ -18,6 +18,7 @@
 #  gscholar: full google scholar url
 #  bluesky:  example.bsky.social
 #  website:  https://example.com/
+#  CV:       /assets/CVs/last-first.pdf #PDF format
 
 clarke-nat:
   name:     Nat Clarke
