@@ -39,6 +39,10 @@ BlueSky: [@{{ member.bluesky }}](https://bsky.app/profile/{{ member.bluesky }})
 [Google Scholar]({{ member.gscholar }})
 {% endif %}
 
+{% if member.cv %}
+<p><a href="{{ person.cv }}" target="_blank">Download CV</a></p> 
+{% endif %}
+
 {{ member.fullbio }}
 
 {% endif %}
