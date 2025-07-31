@@ -40,7 +40,7 @@ BlueSky: [@{{ member.bluesky }}](https://bsky.app/profile/{{ member.bluesky }})
 {% endif %}
 
 {% if member.cv %}
-<p><a href="{{ person.cv }}" target="_blank">Download CV</a></p> 
+<p><a href="{{ member.cv }}" target="_blank">Download CV</a></p> 
 {% endif %}
 
 {{ member.fullbio }}
