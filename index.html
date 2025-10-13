@@ -1,16 +1,82 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author: clarke-nat
-author_profile: true
+layout: splash   # gives us a full-bleed hero + sections
+title: "Clarke Lab"
+author_profile: false
+# HERO
+header:
+  overlay_image: /assets/images/hero/hero_collage.jpg   # add this file
+  overlay_filter: 0.35                                   # darken for legible text
+  caption: "The Clarke Lab at the University of Miami"
+  actions:
+    - label: "Explore our research"
+      url: "/research/"
+    - label: "Join the lab"
+      url: "/join/"
+# RESEARCH HIGHLIGHTS (3–6 cards)
+feature_row:
+  - image_path: /assets/images/highlights/sponges.jpg
+    alt: "Sponge embryos"
+    title: "Origins of adhesion"
+    excerpt: "Reconstructing early animal adhesion systems in sponges & close relatives."
+    url: "/research/#sponges"
+  - image_path: /assets/images/highlights/clytia.jpg
+    alt: "Clytia hemisphaerica"
+    title: "Clytia adhesion code"
+    excerpt: "Do cell types use ‘adhesion codes’? scRNA-seq + experiments in jellyfish."
+    url: "/research/#clytia"
+  - image_path: /assets/images/highlights/vitellotag.jpg
+    alt: "VitelloTag schematic"
+    title: "VitelloTag tools"
+    excerpt: "Receptor-mediated delivery to oocytes enables high-throughput genome editing."
+    url: "/research/#vitellotag"
+# LAB IDENTITY STRIP (photos or stylized art)
+feature_row2:
+  - image_path: /assets/images/lab/lab1.jpg
+    alt: "Lab bench"
+    title: "Wet lab"
+  - image_path: /assets/images/lab/lab2.jpg
+    alt: "Scope work"
+    title: "Microscopy"
+  - image_path: /assets/images/lab/lab3.jpg
+    alt: "Computational analysis"
+    title: "Computation"
 ---
 
-<center>
-<img alt="animal phylogeny showing non-bilaterian animals" src=/assets/images/animal-phylogeny.png style="object-fit: contain; max-height: 25em">
-</center>
+<!-- 1) Research highlight cards -->
+{% include feature_row id="feature_row" %}
 
-Research in our lab is focused on understanding the evolution of multicellularity in animals.
-In particular, we study the evolution and function of cell adhesion proteins to understand how animal tissues are built.
-To do this, we utilize a broad range of methods in comparative embryology, cell biology, protein biochemistry, and bioinformatics to explore how cells stick together in non-bilaterian animals (cnidarians, placozoans, sponges and ctenophores).
+<!-- 2) A short intro block under highlights -->
+<section class="mm-section mm-intro">
+  <div class="mm-container">
+    <h2>How cells learned to stick together</h2>
+    <p>We study how cell adhesion evolved to enable multicellularity, combining molecular & cell biology with comparative genomics and computation.</p>
+  </div>
+</section>
+
+<!-- 3) Lab identity image strip -->
+{% include feature_row id="feature_row2" type="center" %}
+
+<!-- 4) Recent news (last 3 posts) -->
+<section class="mm-section mm-news">
+  <div class="mm-container">
+    <h2>Latest news</h2>
+    <ul class="mm-news-list">
+      {% assign posts = site.posts | where_exp: "p","p.published != false" | slice: 0,3 %}
+      {% for post in posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="mm-news-date">— {{ post.date | date: "%b %d, %Y" }}</span>
+          {% if post.excerpt %}
+            <div class="mm-news-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a class="btn" href="{{ '/year-archive/' | relative_url }}">All news</a></p>
+  </div>
+</section>
+
+# OLD MISSION STATEMENT
+#Research in our lab is focused on understanding the evolution of multicellularity in animals.
+#In particular, we study the evolution and function of cell adhesion proteins to understand how animal tissues are built.
+#To do this, we utilize a broad range of methods in comparative embryology, cell biology, protein biochemistry, and bioinformatics to explore how cells stick together in non-bilaterian animals (cnidarians, placozoans, sponges and ctenophores).
