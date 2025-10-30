@@ -48,6 +48,16 @@ section.bg-light { background: #f6f8fb !important; } /* gallery strip */
 .nav-link { color: #334155 !important; }
 .nav-link:hover { color: var(--brand) !important; }
 
+/* Target the exact classes used in the HTML: navbar navbar-light bg-white border-bottom */
+.navbar.bg-white { 
+  background: #f8fafc !important;         /* light gray-blue */
+  border-bottom: 1px solid #e5e7eb !important;
+}
+.navbar .navbar-brand { color: #0f172a !important; }
+.navbar .nav-link { color: #334155 !important; }
+.navbar .nav-link:hover { color: var(--brand) !important; }
+
+
 
 /* Footer */
 footer {
