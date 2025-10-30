@@ -13,6 +13,9 @@ collections:
   research:
     output: true
     permalink: /research/:path/
+  resources:
+    output: true
+    permalink: /resources/:name/
 
 nav:
   - title: Research
