@@ -2,6 +2,7 @@ title: "Clarke Lab"
 description: "How cells learned to stick together"
 baseurl: ""
 url: "https://clarkelab.com"
+repo_url: "https://github.com/NatClarkeLab/NatClarkeLab.github.io"
 
 collections:
   members:
