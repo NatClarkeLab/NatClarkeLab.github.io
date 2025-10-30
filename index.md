@@ -23,17 +23,17 @@ features:
   - image: https://images.unsplash.com/photo-1616440173663-49fce2cfbabc?q=80&w=1200&auto=format&fit=crop
     title: Origins of adhesion
     excerpt: Reconstructing early animal adhesion systems in sponges & close relatives.
-    url: /research/#sponges
+    url: /research/sponges
     alt: Sponge-like macro pattern
   - image: https://images.unsplash.com/photo-1544551763-7ef42064c4a8?q=80&w=1200&auto=format&fit=crop
     title: Clytia adhesion code
     excerpt: Do cell types use ‘adhesion codes’? scRNA-seq + experiments in jellyfish.
-    url: /research/#clytia
+    url: /research/clytia
     alt: Jellyfish
   - image: https://images.unsplash.com/photo-1581093448799-55d6b1dfc5b9?q=80&w=1200&auto=format&fit=crop
     title: VitelloTag tools
     excerpt: Receptor-mediated delivery to oocytes enables efficient genome editing.
-    url: /research/#vitellotag
+    url: /research/vitellotag
     alt: Lab bench
 
 gallery:
