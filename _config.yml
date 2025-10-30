@@ -1,45 +1,36 @@
-# Basic site config
 title: "Clarke Lab"
 description: "How cells learned to stick together"
-baseurl: "" # keep empty when using a custom domain
+baseurl: ""
 url: "https://clarkelab.com"
 
-
-# Collections
 collections:
-members:
-output: true
-permalink: /members/:name/
-publications:
-output: true
-permalink: /publications/:path/
-research:
-output: true
-permalink: /research/:path/
+  members:
+    output: true
+    permalink: /members/:name/
+  publications:
+    output: true
+    permalink: /publications/:path/
+  research:
+    output: true
+    permalink: /research/:path/
 
-
-# Navigation (editable, used by nav include)
 nav:
-- title: Research
-url: /research/
-- title: Publications
-url: /publications/
-- title: Members
-url: /members/
-- title: News
-url: /year-archive/
-- title: Join
-url: /join/
-- title: Contact
-url: /contact/
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Members
+    url: /members/
+  - title: News
+    url: /year-archive/
+  - title: Join
+    url: /join/
+  - title: Contact
+    url: /contact/
 
-
-# GitHub Pages-compatible plugins
 plugins:
-- jekyll-feed
-- jekyll-sitemap
+  - jekyll-feed
+  - jekyll-sitemap
 
-
-# Markdown & permalinks
 markdown: kramdown
 permalink: pretty

@@ -1,0 +1,9 @@
+[build]
+  command = "bundle install && bundle exec jekyll build"
+  publish = "_site"
+
+[context.deploy-preview]
+  command = "bundle install && bundle exec jekyll build --trace"
+
+[build.environment]
+  JEKYLL_ENV = "production"

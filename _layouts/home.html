@@ -1,64 +1,75 @@
 ---
-</div>
-</div>
-</section>
+layout: default
+---
 
+<!-- HERO -->
+{% include hero.html %}
+
+<!-- INTRO / TAGLINE -->
+<section class="py-5">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h2 class="h1 mb-3 text-center">{{ page.intro_heading | default: "How cells learned to stick together" }}</h2>
+        <p class="lead text-center text-muted">{{ page.intro_text | default: "We study how cell adhesion evolved to enable multicellularity, combining molecular & cell biology with comparative genomics and computation." }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- FEATURED PROJECTS (image cards) -->
 <section class="py-4">
-<div class="container-xxl">
-<div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
-{% for f in page.features %}
-<div class="col">
-<a class="card card-feature h-100" href="{{ f.url }}">
-<img class="card-img-top" src="{{ f.image }}" alt="{{ f.alt | default: f.title }}" loading="lazy">
-<div class="card-body">
-<h3 class="h5 mb-1">{{ f.title }}</h3>
-<p class="card-text text-muted">{{ f.excerpt }}</p>
-</div>
-</a>
-</div>
-{% endfor %}
-</div>
-</div>
+  <div class="container-xxl">
+    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+      {% for f in page.features %}
+      <div class="col">
+        <a class="card card-feature h-100" href="{{ f.url }}">
+          <img class="card-img-top" src="{{ f.image }}" alt="{{ f.alt | default: f.title }}" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 mb-1">{{ f.title }}</h3>
+            <p class="card-text text-muted">{{ f.excerpt }}</p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
-
 
 <!-- LAB STRIP / GALLERY -->
 {% if page.gallery and page.gallery.size > 0 %}
 <section class="py-5 bg-light">
-<div class="container-xxl">
-<div class="gallery-grid">
-{% for g in page.gallery %}
-<figure>
-<img src="{{ g.src }}" alt="{{ g.alt }}" loading="lazy">
-{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
-</figure>
-{% endfor %}
-</div>
-</div>
+  <div class="container-xxl">
+    <div class="gallery-grid">
+      {% for g in page.gallery %}
+        <figure>
+          <img src="{{ g.src }}" alt="{{ g.alt }}" loading="lazy">
+          {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 {% endif %}
 
-
 <!-- LATEST NEWS -->
 <section class="py-5">
-<div class="container-xxl">
-<div class="d-flex align-items-center justify-content-between mb-3">
-<h2 class="h3 mb-0">Latest news</h2>
-<a class="btn btn-outline-secondary btn-sm" href="{{ '/year-archive/' | relative_url }}">All news</a>
-</div>
-<ul class="list-unstyled mb-0">
-{% assign posts = site.posts | where_exp: "p","p.published != false" | slice: 0,3 %}
-{% for post in posts %}
-<li class="mb-3">
-<a href="{{ post.url | relative_url }}" class="fw-semibold">{{ post.title }}</a>
-<span class="text-muted">— {{ post.date | date: "%b %d, %Y" }}</span>
-{% if post.excerpt %}
-<div class="small text-muted">{{ post.excerpt | strip_html | truncate: 160 }}</div>
-{% endif %}
-</li>
-{% endfor %}
-</ul>
-</div>
+  <div class="container-xxl">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h2 class="h3 mb-0">Latest news</h2>
+      <a class="btn btn-outline-secondary btn-sm" href="{{ '/year-archive/' | relative_url }}">All news</a>
+    </div>
+    <ul class="list-unstyled mb-0">
+      {% assign posts = site.posts | where_exp: "p","p.published != false" | slice: 0,3 %}
+      {% for post in posts %}
+        <li class="mb-3">
+          <a href="{{ post.url | relative_url }}" class="fw-semibold">{{ post.title }}</a>
+          <span class="text-muted">— {{ post.date | date: "%b %d, %Y" }}</span>
+          {% if post.excerpt %}
+            <div class="small text-muted">{{ post.excerpt | strip_html | truncate: 160 }}</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

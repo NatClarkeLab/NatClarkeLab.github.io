@@ -1,0 +1,38 @@
+:root{
+  --brand: #1f6feb;
+  --ink: #0f172a;
+  --muted: #6b7280;
+}
+body{ color:var(--ink); }
+
+/* HERO */
+.hero{ position:relative; min-height: 58vh; }
+.hero-img{ max-height: 80vh; object-fit: cover; }
+.hero-overlay{ position:absolute; inset:0; background: radial-gradient(1200px 600px at 10% 20%, rgba(0,0,0,.35), rgba(0,0,0,.55)); }
+.hero-content{ position:absolute; inset:0; display:flex; align-items:center; color:#fff; }
+.hero .btn{ border-radius: 999px; }
+
+/* Feature cards */
+.card-feature{ text-decoration:none; color:inherit; border:0; box-shadow: 0 2px 12px rgba(0,0,0,.06); transition: transform .15s ease, box-shadow .15s ease; }
+.card-feature:hover{ transform: translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,.12); }
+.card-feature .card-img-top{ aspect-ratio: 16/9; object-fit: cover; }
+
+/* Gallery grid */
+.gallery-grid{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.gallery-grid img{ width:100%; height: 220px; object-fit: cover; border-radius: .5rem; }
+.gallery-grid figcaption{ font-size:.85rem; color:var(--muted); margin-top:.35rem; }
+
+/* Research cards */
+.research-grid{ display:grid; gap:1.25rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.research-card{ display:block; background:#fff; border-radius:.75rem; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 12px rgba(0,0,0,.05); transition: transform .15s ease, box-shadow .15s ease; }
+.research-card:hover{ transform: translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,.10); }
+.research-card__img{ background-size: cover; background-position: center; aspect-ratio: 16/9; }
+.research-card__body{ padding: .9rem 1rem 1.1rem; }
+
+/* Navbar tweaks */
+.navbar-brand{ letter-spacing:.2px; }
+.nav-link{ color:#374151 !important; }
+.nav-link:hover{ color: var(--brand) !important; }
+
+/* Footer */
+footer a{ color: inherit; text-decoration: underline; }
