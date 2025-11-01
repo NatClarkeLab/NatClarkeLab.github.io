@@ -1,86 +1,227 @@
+/* =========================================================
+   Clarke Lab — Site Styles (full file)
+   ========================================================= */
+
+/* ===== 1) Theme variables (edit these to change the look) ===== */
 :root{
-  --brand:      #1f6feb; /* buttons/links accent */
-  --ink:        #0f172a; /* main text */
-  --muted:      #6b7280; /* muted text */
-  --bg:         #ffffff; /* page background */
-  --footer-bg:  #0b1e2d; /* footer background */
-  --footer-ink: #e5eef7; /* footer text */
-  --footer-link:#a7d2ff; /* footer links */
+  /* Accent + neutrals */
+  --brand:      #0e7c86;   /* primary accent (links/buttons) */
+  --brand-ink:  #ffffff;   /* text on brand */
+  --ink:        #0f172a;   /* main text */
+  --muted:      #6b7280;   /* muted text */
+  --bg:         #ffffff;   /* page background */
+  --bg-soft:    #f6f8fb;   /* light band background */
+
+  /* Footer */
+  --footer-bg:  #0b1e2d;   /* dark footer */
+  --footer-ink: #e5eef7;   /* footer text color */
+  --footer-link:#a7d2ff;   /* footer link color */
+
+  /* Cards & shadows */
+  --card-bg:    #ffffff;
+  --shadow-1:   0 2px 12px rgba(0,0,0,.06);
+  --shadow-2:   0 12px 28px rgba(0,0,0,.12);
 }
-body { background: var(--bg); color: var(--ink); }
-a { color: var(--brand); }
-a:hover { opacity: .9; }
 
-/* HERO */
-.hero{ position:relative; min-height: 58vh; }
-.hero-img{ max-height: 80vh; object-fit: cover; }
-.hero-overlay{ position:absolute; inset:0; background: radial-gradient(1200px 600px at 10% 20%, rgba(0,0,0,.35), rgba(0,0,0,.55)); }
-.hero-content{ position:absolute; inset:0; display:flex; align-items:center; color:#fff; }
-.hero .btn{ border-radius: 999px; }
+/* ===== 2) Base, typography, links ===== */
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-/* Feature cards */
-.card-feature{ text-decoration:none; color:inherit; border:0; box-shadow: 0 2px 12px rgba(0,0,0,.06); transition: transform .15s ease, box-shadow .15s ease; }
-.card-feature:hover{ transform: translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,.12); }
-.card-feature .card-img-top{ aspect-ratio: 16/9; object-fit: cover; }
-.card { background: #ffffff; }
-section.bg-light { background: #f6f8fb !important; } /* gallery strip */
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
+.btn.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-ink);
+}
+.btn.btn-outline-secondary:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
 
-/* Gallery grid */
-.gallery-grid{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-.gallery-grid img{ width:100%; height: 220px; object-fit: cover; border-radius: .5rem; }
-.gallery-grid figcaption{ font-size:.85rem; color:var(--muted); margin-top:.35rem; }
+h1 { font-size: clamp(2.2rem, 3.5vw, 3rem); line-height: 1.15; margin-bottom: .5rem; }
+h2 { font-size: clamp(1.6rem, 2.5vw, 2rem);  line-height: 1.2; }
+h3, h4, h5, h6 { line-height: 1.25; }
 
-/* Research cards */
-.research-grid{ display:grid; gap:1.25rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-.research-card{ display:block; background:#fff; border-radius:.75rem; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 12px rgba(0,0,0,.05); transition: transform .15s ease, box-shadow .15s ease; }
-.research-card:hover{ transform: translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,.10); }
-.research-card__img{ background-size: cover; background-position: center; aspect-ratio: 16/9; }
-.research-card__body{ padding: .9rem 1rem 1.1rem; }
-
-/* Navbar tweaks */
-.navbar-brand{ letter-spacing:.2px; }
-
+/* ===== 3) Navbar ===== */
+/* If your HTML still has bg/utility classes, either remove them or keep these overrides */
 .navbar {
-  background: #f8fafc;               /* very light gray-blue */
-  border-bottom: 1px solid #e5e7eb;   /* subtle line */
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
 }
-.nav-link { color: #334155 !important; }
-.nav-link:hover { color: var(--brand) !important; }
-
-/* Target the exact classes used in the HTML: navbar navbar-light bg-white border-bottom */
-.navbar.bg-white { 
-  background: #f8fafc !important;         /* light gray-blue */
-  border-bottom: 1px solid #e5e7eb !important;
-}
-.navbar .navbar-brand { color: #0f172a !important; }
+.navbar .navbar-brand { color: #0f172a; }
 .navbar .nav-link { color: #334155 !important; }
 .navbar .nav-link:hover { color: var(--brand) !important; }
 
+/* ===== 4) HERO (full set) ===== */
+.hero {
+  position: relative;
+  min-height: 58vh;           /* overall height on desktop */
+  isolation: isolate;         /* ensure overlay layers correctly */
+}
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 70vh;               /* image height; adjust to taste */
+  max-height: 80vh;
+  object-fit: cover;          /* preserve crop */
+  object-position: center;    /* feel free to tune per-image */
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* subtle tint & vignette for legibility on any photo */
+  background:
+    linear-gradient(0deg, rgba(0,0,0,.40), rgba(0,0,0,.30)),
+    radial-gradient(1200px 600px at 10% 20%, rgba(0,0,0,.35), rgba(0,0,0,.55));
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  color: #fff;
+  padding-top: 2rem;          /* breathing room over nav */
+  padding-bottom: 2rem;
+}
+.hero .btn.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-ink);
+}
 
+/* Carousel variant (if you use slides in hero.html) */
+.carousel .hero-img { height: 70vh; max-height: 80vh; }
 
-/* Footer */
+/* ===== 5) Section bands for visual rhythm ===== */
+.section-soft { background: var(--bg-soft) !important; }
+section.bg-light { background: var(--bg-soft) !important; } /* keep for older markup */
+.mm-section { padding: 2.5rem 0; }  /* legacy class, safe to keep */
+
+/* ===== 6) Cards & hovers (home tiles) ===== */
+.card, .card-feature {
+  background: var(--card-bg);
+  box-shadow: var(--shadow-1);
+  border: 0;
+}
+.card-feature{
+  text-decoration: none;
+  color: inherit;
+  transition: transform .15s ease, box-shadow .15s ease;
+  border-radius: .75rem;
+  overflow: hidden;
+  display: block;
+}
+.card-feature:hover{
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2);
+}
+.card-feature .card-img-top{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* ===== 7) Research grid ===== */
+.research-grid{
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.research-card{
+  display: block;
+  background: var(--card-bg);
+  border-radius: .75rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-1);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.research-card:hover{
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2);
+}
+.research-card__img{
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16/9;
+}
+.research-card__body{ padding: .9rem 1rem 1.1rem; }
+
+/* ===== 8) Resources grid (if enabled) ===== */
+.resources-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.resource-card{
+  display: block;
+  padding: 1rem;
+  border-radius: .75rem;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.resource-card:hover{
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2);
+}
+.resource-card__icon{
+  width: 28px;
+  height: 28px;
+  margin-bottom: .5rem;
+  opacity: .85;
+}
+
+/* ===== 9) Gallery thumbs ===== */
+.gallery-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.gallery-grid img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+.gallery-grid figcaption{
+  font-size: .85rem;
+  color: var(--muted);
+  margin-top: .35rem;
+}
+
+/* ===== 10) Footer (dark band) ===== */
 footer {
   background: var(--footer-bg);
   color: var(--footer-ink);
 }
-footer a {
-  color: var(--footer-link);
-  text-decoration: underline;
-}
-footer .border-top { border-top: none !important; } /* optional: hide the light border */
+footer, footer * { color: var(--footer-ink) !important; }
+footer a { color: var(--footer-link) !important; text-decoration: underline; }
+footer .border-top { border-top: none !important; } /* hide light border if present */
 
-/* === Resources grid (drop at the end of static/site.css) === */
-.resources-grid{
-  display:grid; gap:1rem;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-}
-.resource-card{
-  display:block; padding:1rem; border-radius:.75rem; background:#fff;
-  box-shadow:0 2px 12px rgba(0,0,0,.06);
-  text-decoration:none; color:inherit;
-  transition:transform .15s ease, box-shadow .15s ease;
-}
-.resource-card:hover{ transform:translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,.12); }
-.resource-card__icon{ width:28px; height:28px; margin-bottom:.5rem; opacity:.85; }
+/* ===== 11) Utilities & a11y niceties ===== */
+.img-cover { width: 100%; height: 100%; object-fit: cover; }
+.rounded-xl { border-radius: 1rem; }
+.shadow-1 { box-shadow: var(--shadow-1); }
+.shadow-2 { box-shadow: var(--shadow-2); }
 
+@media (max-width: 576px){
+  .hero-img { height: 48vh; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  * { transition: none !important; animation: none !important; }
+}
