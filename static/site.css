@@ -295,44 +295,63 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   .research-item:nth-child(even) .research-body{ grid-column: auto; }
 }
 
-/* ===== Team (People) page ===== */
-.team-grid{
+/* ===== Team (horizontal layout) ===== */
+.team-row{
   display: grid;
+  grid-template-columns: 240px 1fr; /* photo+icons | bio */
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  padding: 1.25rem 0;
+}
+.team-row + .team-row{
+  border-top: 1px solid #e5e7eb;    /* simple separator line */
 }
 
-.team-card{
+/* Left column: photo with icon row underneath */
+.team-left{
   display: grid;
-  grid-template-rows: auto 1fr;
-  gap: .75rem;
-  padding: 1rem;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: .75rem;
+  grid-template-rows: auto auto;     /* image, then icons */
+  align-content: start;
+  gap: .5rem;
 }
-
 .team-photo{
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 50%;            /* circle portraits */
+  border-radius: 8px;                 /* square corners; change to 50% for circle */
 }
 
-.team-body p { margin-bottom: .5rem; }
-
+/* Icon row under the photo */
 .team-links{
-  display: flex; gap: .5rem; align-items: center; margin-top: .25rem;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
 }
-
 .team-icon{
-  display: inline-flex; align-items:center; justify-content:center;
-  width: 34px; height: 34px; border-radius: 999px;
-  border: 1px solid #e5e7eb; text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
 }
-.team-icon i{ font-size: 1rem; }
+.team-icon i { font-size: 1rem; }
+.team-icon img { width: 18px; height: 18px; display: block; }
 .team-icon:hover{ border-color: var(--brand); color: var(--brand); }
 
-/* Alumni list: light and compact */
+/* Right column: name, role, bio */
+.team-right p { margin-bottom: .5rem; }
+.team-right p:last-child { margin-bottom: 0; }
+
+/* Alumni list style */
 .alumni-list{ margin: 0; padding-left: 1.2rem; }
 .alumni-list li{ margin-bottom: .35rem; }
+
+/* Mobile: stack vertically */
+@media (max-width: 640px){
+  .team-row{ grid-template-columns: 1fr; }
+  .team-left{ grid-template-columns: 140px 1fr; grid-template-rows: auto; gap: .75rem; }
+  .team-photo{ width: 140px; }
+  .team-links{ align-self: center; }
+}
+
