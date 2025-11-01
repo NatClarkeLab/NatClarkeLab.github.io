@@ -5,7 +5,7 @@ url: "https://clarkelab.com"
 repo_url: "https://github.com/NatClarkeLab/NatClarkeLab.github.io"
 
 collections:
-  members:
+  team:
     output: true
     permalink: /members/:name/
   publications:
@@ -23,8 +23,8 @@ nav:
     url: /research/
   - title: Publications
     url: /publications/
-  - title: Members
-    url: /members/
+  - title: Team
+    url: /team/
   - title: News
     url: /year-archive/
   - title: Resources
