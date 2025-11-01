@@ -4,7 +4,7 @@ role: "Lab Mascot"
 order: 998
 status: current          # or "alumni"
 photo: /assets/images/waffles.jpg
-bio:
+bio: "#1 good boy"
 email: 
 scholar: 
 bluesky: 
