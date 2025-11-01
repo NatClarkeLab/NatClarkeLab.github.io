@@ -1,7 +1,7 @@
 ---
 name: "Ada Lovelace"
 role: "Postdoctoral Fellow"
-order: 1
+order: 2
 status: current          # or "alumni"
 photo: /static/team/ada.jpg
 bio: "I study adhesion protein evolution using scRNA-seq and functional assays in cnidarians."
