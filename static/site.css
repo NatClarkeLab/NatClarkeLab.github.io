@@ -225,3 +225,13 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
 @media (prefers-reduced-motion: reduce){
   * { transition: none !important; animation: none !important; }
 }
+
+/* Pills nav */
+.pills{ list-style:none; padding:0; margin:0; display:flex; gap:.5rem; flex-wrap:wrap; }
+.pills a{ display:inline-block; padding:.4rem .75rem; border:1px solid #e5e7eb; border-radius:999px; color:#334155; text-decoration:none; }
+.pills a:hover{ border-color: var(--brand); color: var(--brand); }
+
+/* Checklist bullets */
+.checklist{ padding-left: 1.1rem; }
+.checklist li{ margin-bottom:.3rem; }
+
