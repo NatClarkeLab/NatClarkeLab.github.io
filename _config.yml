@@ -12,8 +12,8 @@ collections:
     output: true
     permalink: /publications/:path/
   research:
-    output: true
-    permalink: /research/:path/
+    output: false
+    permalink: /research/:name/
   resources:
     output: true
     permalink: /resources/:name/
