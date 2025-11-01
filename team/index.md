@@ -9,7 +9,7 @@ permalink: /team/
 
   <!-- Current team grid -->
   <div class="team-grid">
-    {% assign people = site.members | where_exp: "m", "m.status != 'alumni'" | sort: "order" %}
+    {% assign people = site.team | where_exp: "m", "m.status != 'alumni'" | sort: "order" %}
     {% for m in people %}
     <article class="team-card">
       {% if m.photo %}
