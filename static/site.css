@@ -232,68 +232,49 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   gap: 0; /* we'll use separators instead of gaps */
 }
 
-/* Each item: two columns, no box, generous vertical rhythm */
-.research-item {
+/* Keep items on the same row using grid areas */
+.research-item{
   display: grid;
-  grid-template-columns: 260px 1fr;  /* bigger image */
-  align-items: start;
+  grid-template-columns: 260px 1fr;      /* image | text (odd items) */
+  grid-template-areas: "image text";
   column-gap: 1.25rem;
-  padding: 1.25rem 0;               /* top/bottom spacing */
-  background: transparent;
-  border: 0;                         /* remove card border */
-}
-
-/* Separator line between items (not before the first) */
-.research-item + .research-item {
-  border-top: 1px solid #e5e7eb;     /* simple horizontal rule */
-}
-
-/* Bigger, square-corner image; no crop rounding */
-.research-thumb {
-  width: 100%;
-  height: 180px;                      /* taller thumb */
-  object-fit: cover;
-  border-radius: 0;                    /* no rounded corners */
-}
-
-/* Titles and text spacing */
-.research-body h3 { margin-bottom: .25rem; }
-.research-body p.text-muted { margin-bottom: .5rem; }
-.research-body p:last-child { margin-bottom: 0; }
-
-/* Mobile: stack, even taller image for nicer crop */
-@media (max-width: 600px){
-  .research-item { grid-template-columns: 1fr; }
-  .research-thumb { height: 220px; margin-bottom: .5rem; }
-}
-
-/* Alternate image/text sides on even items */
-.research-item {
-  display: grid;
-  grid-template-columns: 260px 1fr;   /* image left (odd rows) */
-  column-gap: 1.25rem;
-  align-items: start;
+  align-items: start;                    /* or center if you prefer */
   padding: 1.25rem 0;
 }
 
+/* Map elements to areas */
+.research-thumb{ grid-area: image; }
+.research-body{  grid-area: text;  }
+
+/* Even items: flip the areas + columns (still one row) */
 .research-item:nth-child(even){
-  grid-template-columns: 1fr 260px;   /* image right (even rows) */
+  grid-template-columns: 1fr 260px;      /* text | image */
+  grid-template-areas: "text image";
 }
 
-.research-item:nth-child(even) .research-thumb{
-  grid-column: 2;                      /* move image to right column */
+/* Separator line */
+.research-item + .research-item{
+  border-top: 1px solid #e5e7eb;
 }
 
-.research-item:nth-child(even) .research-body{
-  grid-column: 1;                      /* text to left column */
+/* Image sizing (keeps heights consistent across items) */
+.research-thumb{
+  width: 100%;
+  height: 180px;                          /* tweak as you like */
+  object-fit: cover;
+  border-radius: 0;                        /* square corners */
 }
 
-/* Keep mobile stacked (no alternation) */
+/* Mobile: stack image above text for all items */
 @media (max-width: 600px){
-  .research-item{ grid-template-columns: 1fr !important; }
-  .research-item:nth-child(even) .research-thumb,
-  .research-item:nth-child(even) .research-body{ grid-column: auto; }
+  .research-item{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
 }
+
 
 /* ===== Team (horizontal layout) ===== */
 .team-row{
