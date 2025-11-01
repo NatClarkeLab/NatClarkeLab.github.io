@@ -1,6 +1,6 @@
 ---
-name: Structure and function of invertebrate adhesion proteins
-index: 2
+title: Structure and function of invertebrate adhesion proteins
+order: 2
 image: /assets/images/vinculin-homolog.jpeg
 image_alt: vinculin ribbon diagram
 ---
