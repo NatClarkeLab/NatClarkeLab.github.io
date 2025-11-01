@@ -294,3 +294,45 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   .research-item:nth-child(even) .research-thumb,
   .research-item:nth-child(even) .research-body{ grid-column: auto; }
 }
+
+/* ===== Team (People) page ===== */
+.team-grid{
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.team-card{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: .75rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: .75rem;
+}
+
+.team-photo{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;            /* circle portraits */
+}
+
+.team-body p { margin-bottom: .5rem; }
+
+.team-links{
+  display: flex; gap: .5rem; align-items: center; margin-top: .25rem;
+}
+
+.team-icon{
+  display: inline-flex; align-items:center; justify-content:center;
+  width: 34px; height: 34px; border-radius: 999px;
+  border: 1px solid #e5e7eb; text-decoration: none;
+}
+.team-icon i{ font-size: 1rem; }
+.team-icon:hover{ border-color: var(--brand); color: var(--brand); }
+
+/* Alumni list: light and compact */
+.alumni-list{ margin: 0; padding-left: 1.2rem; }
+.alumni-list li{ margin-bottom: .35rem; }
