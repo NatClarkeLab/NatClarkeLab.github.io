@@ -1,6 +1,6 @@
 ---
-name: Origins of simple tissues
-index: 1
+title: Origins of simple tissues
+order: 1
 image: /assets/images/LifeAct-GFP.gif
 image_alt: blastula stage cnidarian embryo
 ---
