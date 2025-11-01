@@ -267,3 +267,30 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   .research-thumb { height: 220px; margin-bottom: .5rem; }
 }
 
+/* Alternate image/text sides on even items */
+.research-item {
+  display: grid;
+  grid-template-columns: 260px 1fr;   /* image left (odd rows) */
+  column-gap: 1.25rem;
+  align-items: start;
+  padding: 1.25rem 0;
+}
+
+.research-item:nth-child(even){
+  grid-template-columns: 1fr 260px;   /* image right (even rows) */
+}
+
+.research-item:nth-child(even) .research-thumb{
+  grid-column: 2;                      /* move image to right column */
+}
+
+.research-item:nth-child(even) .research-body{
+  grid-column: 1;                      /* text to left column */
+}
+
+/* Keep mobile stacked (no alternation) */
+@media (max-width: 600px){
+  .research-item{ grid-template-columns: 1fr !important; }
+  .research-item:nth-child(even) .research-thumb,
+  .research-item:nth-child(even) .research-body{ grid-column: auto; }
+}
