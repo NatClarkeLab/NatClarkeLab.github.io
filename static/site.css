@@ -226,17 +226,44 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   * { transition: none !important; animation: none !important; }
 }
 
-/* Simple research list (single section) */
-.research-list { display: grid; gap: 1.25rem; }
-.research-item {
-  display: grid; grid-template-columns: 160px 1fr; gap: 1rem;
-  padding: 1rem; border: 1px solid #e5e7eb; border-radius: .75rem; background: #fff;
+/* ===== Research list — "simple-style" ===== */
+.research-list {
+  display: grid;
+  gap: 0; /* we'll use separators instead of gaps */
 }
-.research-thumb { width: 100%; height: 120px; object-fit: cover; border-radius: .5rem; }
+
+/* Each item: two columns, no box, generous vertical rhythm */
+.research-item {
+  display: grid;
+  grid-template-columns: 260px 1fr;  /* bigger image */
+  align-items: start;
+  column-gap: 1.25rem;
+  padding: 1.25rem 0;               /* top/bottom spacing */
+  background: transparent;
+  border: 0;                         /* remove card border */
+}
+
+/* Separator line between items (not before the first) */
+.research-item + .research-item {
+  border-top: 1px solid #e5e7eb;     /* simple horizontal rule */
+}
+
+/* Bigger, square-corner image; no crop rounding */
+.research-thumb {
+  width: 100%;
+  height: 180px;                      /* taller thumb */
+  object-fit: cover;
+  border-radius: 0;                    /* no rounded corners */
+}
+
+/* Titles and text spacing */
+.research-body h3 { margin-bottom: .25rem; }
+.research-body p.text-muted { margin-bottom: .5rem; }
 .research-body p:last-child { margin-bottom: 0; }
 
+/* Mobile: stack, even taller image for nicer crop */
 @media (max-width: 600px){
   .research-item { grid-template-columns: 1fr; }
-  .research-thumb { height: 180px; }
+  .research-thumb { height: 220px; margin-bottom: .5rem; }
 }
 
