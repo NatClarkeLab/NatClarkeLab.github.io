@@ -6,8 +6,8 @@ repo_url: "https://github.com/NatClarkeLab/NatClarkeLab.github.io"
 
 collections:
   team:
-    output: true
-    permalink: /members/:name/
+    output: false
+    permalink: /team/:name/
   publications:
     output: true
     permalink: /publications/:path/
