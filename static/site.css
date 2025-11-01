@@ -131,33 +131,6 @@ section.bg-light { background: var(--bg-soft) !important; } /* keep for older ma
   object-fit: cover;
 }
 
-/* ===== 7) Research grid ===== */
-.research-grid{
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
-.research-card{
-  display: block;
-  background: var(--card-bg);
-  border-radius: .75rem;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  box-shadow: var(--shadow-1);
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-.research-card:hover{
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-2);
-}
-.research-card__img{
-  background-size: cover;
-  background-position: center;
-  aspect-ratio: 16/9;
-}
-.research-card__body{ padding: .9rem 1rem 1.1rem; }
-
 /* ===== 8) Resources grid (if enabled) ===== */
 .resources-grid{
   display: grid;
@@ -232,46 +205,51 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   gap: 0; /* we'll use separators instead of gaps */
 }
 
-/* Keep items on the same row using grid areas */
+/* Same-row alternating layout (kept from before) */
 .research-item{
   display: grid;
-  grid-template-columns: 260px 1fr;      /* image | text (odd items) */
+  grid-template-columns: 240px 1fr;       /* square image column + text */
   grid-template-areas: "image text";
   column-gap: 1.25rem;
-  align-items: start;                    /* or center if you prefer */
+  align-items: start;
   padding: 1.25rem 0;
 }
-
-/* Map elements to areas */
 .research-thumb{ grid-area: image; }
 .research-body{  grid-area: text;  }
 
-/* Even items: flip the areas + columns (still one row) */
 .research-item:nth-child(even){
-  grid-template-columns: 1fr 260px;      /* text | image */
+  grid-template-columns: 1fr 240px;       /* text | image */
   grid-template-areas: "text image";
 }
 
 /* Separator line */
-.research-item + .research-item{
-  border-top: 1px solid #e5e7eb;
-}
+.research-item + .research-item{ border-top: 1px solid #e5e7eb; }
 
-/* Image sizing (keeps heights consistent across items) */
+/* TRUE square, no cropping */
 .research-thumb{
-  width: 100%;
-  height: 180px;                          /* tweak as you like */
-  object-fit: cover;
-  border-radius: 0;                        /* square corners */
+  width: 240px;           /* must match the image column width above */
+  height: 240px;          /* square */
+  object-fit: contain;    /* show entire image without cropping */
+  object-position: center;
+  background: #f8fafc;    /* subtle backdrop so transparent PNGs look okay */
+  border-radius: 0;       /* square corners */
+  display: block;
 }
 
-/* Mobile: stack image above text for all items */
+/* Mobile: stack */
 @media (max-width: 600px){
   .research-item{
     grid-template-columns: 1fr;
     grid-template-areas:
       "image"
       "text";
+  }
+  .research-thumb{
+    width: 100%;
+    max-width: 320px;      /* keeps it reasonable on phones */
+    height: auto;          /* let it scale naturally on mobile */
+    aspect-ratio: 1 / 1;   /* still square when width expands */
+    justify-self: start;
   }
 }
 
