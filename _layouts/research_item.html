@@ -32,7 +32,14 @@ layout: default
     <section class="mb-4">
       <h2 class="h6 mb-2">Related publications</h2>
       <ul class="list-unstyled small mb-0">
-        {% assign related = site.publications | where_exp: "p", "p.tags and p.tags | join: ',' contains page.tags[0]" | sort: "year" | reverse %}
+        {% if page.tags and page.tags.size > 0 %}
+          {% assign tag = page.tags | first %}
+          {% assign related = site.publications
+             | where_exp: "p", "p.tags and p.tags contains tag"
+             | sort: "year"
+             | reverse %}
+      {% endif %}
+
         {% for p in related limit:6 %}
           <li class="mb-2">
             <strong>{{ p.title }}</strong> — <em>{{ p.authors }}</em> ({{ p.year }}){% if p.journal %}, {{ p.journal }}{% endif %}
