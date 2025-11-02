@@ -13,7 +13,7 @@ permalink: /join/
   <!-- Your three paragraphs — paste/replace the text between the <div class="prose"> tags -->
   <div class="prose">
     <p>We are actively recruiting creative and highly motivated scientists at all levels. We welcome inquiries from undergraduate students, graduate students and postdoctoral fellows interested in exploring questions related to the evolution of animal multicellularity, cell adhesion mechanisms, and embryonic morphogenesis. We are interested in recruiting candidates from diverse scientific backgrounds, including, but not limited to cell and developmental biology, computational biology, biochemistry, evolution, evo-devo, biophysics, and neuroscience.</p>
-    <p>Interested PhD students should contact Nat directly to discuss research projects, and plan to apply to the University of Miami Biology graduate program <a href= https://biology.as.miami.edu/graduate/prospective-graduate-students/index.html/>(more info here)</a>.</p>
+    <p>Interested PhD students should contact Nat directly to discuss research projects, and plan to apply to the University of Miami Biology graduate program <a href="https://biology.as.miami.edu/graduate/prospective-graduate-students/index.html/">(more info here)</a>.</p>
     <p>Postdoctoral candidates should contact Nat directly with a cover letter, CV, and contact information for two references. Your cover letter should briefly describe your past and current research interests, why you are interested in joining our group, and a short description of a project you would like to develop in the lab.</p>
   </div>
 
