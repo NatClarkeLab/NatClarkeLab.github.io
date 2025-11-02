@@ -59,19 +59,6 @@ permalink: /publications/
       {% endif %}
 
       {%- comment -%}
-        Optional: show abstract if the item has page content (old posts often had the abstract as body).
-        Remove this block if you don't want abstracts on the index page.
-      {%- endcomment -%}
-      {% if p.content and p.content != "" %}
-        <details class="pub-abs">
-          <summary>Abstract</summary>
-          <div class="pub-abstract">
-            {{ p.content }}
-          </div>
-        </details>
-      {% endif %}
-
-      {%- comment -%}
         Tiny links row: DOI and PDF (if you later add "pdf:" to front matter).
       {%- endcomment -%}
       <div class="pub-links">
