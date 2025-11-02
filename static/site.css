@@ -314,3 +314,16 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   .team-links{ align-self: center; }
 }
 
+/* Tighter reading width + nicer spacing for pure text sections */
+.prose { max-width: 72ch; }
+.prose p { line-height: 1.7; margin-bottom: 1rem; }
+
+/* Light note block */
+.callout{
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid var(--brand);
+  border-radius: .5rem;
+  background: #f9fafb;
+  padding: .9rem 1rem;
+  color: #334155;
+}
