@@ -13,7 +13,7 @@ permalink: /join/
   <!-- Your three paragraphs — paste/replace the text between the <div class="prose"> tags -->
   <div class="prose">
     <p>We are actively recruiting creative and highly motivated scientists at all levels. We welcome inquiries from undergraduate students, graduate students and postdoctoral fellows interested in exploring questions related to the evolution of animal multicellularity, cell adhesion mechanisms, and embryonic morphogenesis. We are interested in recruiting candidates from diverse scientific backgrounds, including, but not limited to cell and developmental biology, computational biology, biochemistry, evolution, evo-devo, biophysics, and neuroscience.</p>
-    <p>Interested PhD students should contact Nat directly to discuss research projects, and plan to apply to the University of Miami Biology graduate program [(more info here)](https://biology.as.miami.edu/graduate/prospective-graduate-students/index.html).</p>
+    <p>Interested PhD students should contact Nat directly to discuss research projects, and plan to apply to the University of Miami Biology graduate program <a href= https://biology.as.miami.edu/graduate/prospective-graduate-students/index.html/>(more info here)</a>.</p>
     <p>Postdoctoral candidates should contact Nat directly with a cover letter, CV, and contact information for two references. Your cover letter should briefly describe your past and current research interests, why you are interested in joining our group, and a short description of a project you would like to develop in the lab.</p>
   </div>
 
@@ -30,7 +30,7 @@ permalink: /join/
 
   <!-- Simple note block (edit or remove) -->
   <div class="callout mt-4">
-    Strong applicants often share a brief statement of fit (2–3 sentences), a CV, and one example of work they’re proud of (paper, preprint, code, figure, or protocol).
+    If you are interested in our research, but don't see yourself reflected on this page, please still get in touch - we are always on the lookout for new team members and collaborators!
   </div>
 
   <!-- CTA buttons -->
