@@ -7,7 +7,7 @@ permalink: /contact/
 <div class="container-xxl py-4">
   <header class="mb-4">
     <h1 class="mb-2">Contact</h1>
-    <p class="lead text-muted mb-0">Email is best. Visits by appointment.</p>
+    <p class="lead text-muted mb-0">Get in touch! (email is best) </p>
   </header>
 
   <!-- Quick cards -->
