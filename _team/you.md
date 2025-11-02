@@ -1,5 +1,5 @@
 ---
-name: "You?"
+name: "This could be you!"
 role: "Prospective lab member"
 order: 999
 status: placeholder    # not 'alumni'
