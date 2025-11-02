@@ -6,8 +6,8 @@ publication: true
 journal: Developmental Biology
 doi: 10.1016/j.ydbio.2018.10.022
 authors:
-- Paul J. Minor<sup>*</sup>
-- D. Nathaniel Clarke<sup>*</sup>
+- Paul J. Minor*
+- D. Nathaniel Clarke*
 - José M. Andrade López
 - Jens H. Fritzenwanker
 - Jessica Gray
@@ -17,7 +17,5 @@ abstract: "Hemichordates are a phylum of marine invertebrate deuterostomes that 
 tags:
   - Article
 ---
-
-We recently published ["{{page.title}}"](https://doi.org/{{page.doi}}) in *{{page.journal}}*.
 
 {{page.abstract}}
