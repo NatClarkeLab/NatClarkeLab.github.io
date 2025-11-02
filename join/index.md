@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Join the lab"
+title: Join the lab
 ---
 
 Our lab welcomes applicants from any race, ethnicity, religion, national origin, gender identity, gender expression, caregiver or family commitment, political affiliation, sexual orientation, and eligible age or disability status. We are committed to fostering a supportive and collaborative lab environment.
