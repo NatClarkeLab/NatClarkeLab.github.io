@@ -17,6 +17,4 @@ tags:
   - Review
 ---
 
-We recently published ["{{page.title}}"](https://doi.org/{{page.doi}}) in *{{page.journal}}*.
-
 {{page.abstract}}
