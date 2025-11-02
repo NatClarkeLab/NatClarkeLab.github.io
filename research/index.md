@@ -6,7 +6,7 @@ title: Research
 <div class="container-xxl py-4">
   <header class="mb-4">
     <h1 class="mb-2">Research</h1>
-    <p class="lead text-muted mb-0">We are broadly interested in cell adhesion mechanisms, and how they contribute to animal evolution and organismal complexity. These are a few of our current projects: </p>
+    <p class="lead text-muted mb-0">We are broadly interested in cell adhesion mechanisms, and how they contribute to animal evolution and organismal complexity.</p>
   </header>
 
   <div class="research-list">
