@@ -8,7 +8,7 @@ bio: "Nat did his undergraduate at Whitman College, where he worked in the labs 
 email: natclarke@miami.edu
 scholar: https://scholar.google.com/citations?user=xFyjzfoAAAAJ&hl=en
 bluesky: https://bsky.app/profile/natclarke.bsky.social
-website: 
+website: https://people.miami.edu/profile/0d1eb33de89cbec87818e3890c52011a
 # For alumni:
 # next: "Now at Example University (Assistant Professor)"
 ---
