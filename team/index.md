@@ -23,6 +23,14 @@ permalink: /team/
           </a>
         {% endif %}
 
+        {% if m.orcid %}
+          {% assign orcid_url = 'https://orcid.org/' | append: m.orcid %}
+          <a href="{{ orcid_url }}" class="team-icon" aria-label="ORCID" title="ORCID"
+             target="_blank" rel="me noopener">
+            <img src="https://cdn.simpleicons.org/orcid" alt="">
+          </a>
+        {% endif %}
+
         {% if m.scholar %}
           <a href="{{ m.scholar }}" class="team-icon" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener">
             <img src="https://cdn.simpleicons.org/googlescholar" alt="" />
