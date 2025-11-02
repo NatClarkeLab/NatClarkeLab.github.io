@@ -6,9 +6,9 @@ publication: true
 journal: Integrative and Comparative Biology
 doi: 10.1093/icb/icae024
 authors:
-- Ethan G. Staats<sup>*</sup>
-- D. Nathaniel Clarke<sup>*</sup>
-- Vicki Buchsbaum Pearse<sup>*</sup>
+- Ethan G. Staats*
+- D. Nathaniel Clarke*
+- Vicki Buchsbaum Pearse*
 - Kelly Govenar
 - Evelien De Meulenaere
 - Dimitri D. Deheyn
@@ -17,7 +17,5 @@ abstract: "Green fluorescent proteins (GFPs) are a family of proteins with a dis
 tags:
   - Article
 ---
-
-We recently published ["{{page.title}}"](https://doi.org/{{page.doi}}) in *{{page.journal}}*.
 
 {{page.abstract}}
