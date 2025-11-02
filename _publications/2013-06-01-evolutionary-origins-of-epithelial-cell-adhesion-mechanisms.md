@@ -6,8 +6,8 @@ publication: true
 journal: Current Topics in Membranes
 doi: 10.1016/B978-0-12-417027-8.00008-8
 authors:
-- Phillip W. Miller<sup>*</sup>
-- D. Nathaniel Clarke<sup>*</sup>
+- Phillip W. Miller*
+- D. Nathaniel Clarke*
 - William I. Weis
 - Christopher J. Lowe
 - W. James Nelson
