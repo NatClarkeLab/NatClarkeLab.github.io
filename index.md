@@ -3,8 +3,8 @@ layout: home
 title: Home
 
 hero:
-  image: https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1920&auto=format&fit=crop
-  alt: Ocean + network motif
+  image: assets/images/Two_cell_embryo_hero.png
+  alt: two-cell Clytia embryo
   heading: "The Clarke Lab"
   lead: "We explore how cell adhesion enabled the evolution of multicellularity."
   cta:
