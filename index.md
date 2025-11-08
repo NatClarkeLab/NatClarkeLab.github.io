@@ -37,14 +37,14 @@ features:
     alt: Lab bench
 
 
-#gallery:
-  - src: https://images.unsplash.com/photo-1520671454035-218103cbf3f7?q=80&w=1200&auto=format&fit=crop
-    alt: Confocal-like micrograph
-    caption: Neural lineage mapping
-  - src: https://images.unsplash.com/photo-1559757175-08e3f065df30?q=80&w=1200&auto=format&fit=crop
-    alt: Water texture
-  - src: https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop
-    alt: Blue pattern
+# gallery:
+#  - src: https://images.unsplash.com/photo-1520671454035-218103cbf3f7?q=80&w=1200&auto=format&fit=crop
+#    alt: Confocal-like micrograph
+#    caption: Neural lineage mapping
+#  - src: https://images.unsplash.com/photo-1559757175-08e3f065df30?q=80&w=1200&auto=format&fit=crop
+#    alt: Water texture
+#  - src: https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop
+#    alt: Blue pattern
 
 
 ---
