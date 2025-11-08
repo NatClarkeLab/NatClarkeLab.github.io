@@ -1,0 +1,29 @@
+{% assign hero = page.hero %}
+<section class="hero position-relative overflow-hidden">
+  {% if hero.slides %}
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+        {% for s in hero.slides %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <img src="{{ s.src }}" class="d-block w-100 hero-img" alt="{{ s.alt }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    <img src="{{ hero.image }}" class="w-100 hero-img" alt="{{ hero.alt | default: 'Hero image' }}">
+  {% endif %}
+  <div class="container-xxl hero-content">
+    <div class="col-lg-8">
+      <h1 class="display-4 fw-semibold mb-3">{{ hero.heading | default: site.title }}</h1>
+      <p class="lead mb-4">{{ hero.lead | default: site.description }}</p>
+      {% if hero.cta and hero.cta.size > 0 %}
+        <div class="d-flex gap-3 flex-wrap">
+          {% for c in hero.cta %}
+            <a class="btn btn-{{ c.style | default: 'primary' }} btn-lg" href="{{ c.url }}">{{ c.label }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

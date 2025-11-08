@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<!-- HERO -->
+{% include hero.html %}
+
+<!-- INTRO / TAGLINE -->
+<section class="py-5">
+  <div class="container-xxl">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h2 class="h1 mb-3 text-center">{{ page.intro_heading | default: "How cells learned to stick together" }}</h2>
+        <p class="lead text-center text-muted">{{ page.intro_text | default: "We study how cell adhesion evolved to enable multicellularity, combining molecular & cell biology with comparative genomics and computation." }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS (image cards) -->
+<section class="py-4">
+  <div class="container-xxl">
+    <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+      {% for f in page.features %}
+      <div class="col">
+        <a class="card card-feature h-100" href="{{ f.url }}">
+          <img class="card-img-top" src="{{ f.image }}" alt="{{ f.alt | default: f.title }}" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 mb-1">{{ f.title }}</h3>
+            <p class="card-text text-muted">{{ f.excerpt }}</p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- LAB STRIP / GALLERY -->
+{% if page.gallery and page.gallery.size > 0 %}
+<section class="py-5 bg-light">
+  <div class="container-xxl">
+    <div class="gallery-grid">
+      {% for g in page.gallery %}
+        <figure>
+          <img src="{{ g.src }}" alt="{{ g.alt }}" loading="lazy">
+          {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+

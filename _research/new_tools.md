@@ -1,6 +1,6 @@
 ---
-name: New tools for non-model organisms
-index: 4
+title: New tools for non-model organisms
+order: 4
 image: /assets/images/SeeStar-urchin.png
 image_alt: cleared and stained sea urchin
 ---

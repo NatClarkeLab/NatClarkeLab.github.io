@@ -1,6 +1,6 @@
 ---
-name: New models for studying the base of the animal tree of life
-index: 3
+title: New models for studying the base of the animal tree of life
+order: 3
 image: /assets/images/choanocyte-chamber.gif
 image_alt: sponge choanocyte chamber
 ---
