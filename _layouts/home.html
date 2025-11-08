@@ -52,24 +52,3 @@ layout: default
 </section>
 {% endif %}
 
-<!-- LATEST NEWS -->
-<section class="py-5">
-  <div class="container-xxl">
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h2 class="h3 mb-0">Latest news</h2>
-      <a class="btn btn-outline-secondary btn-sm" href="{{ '/year-archive/' | relative_url }}">All news</a>
-    </div>
-    <ul class="list-unstyled mb-0">
-      {% assign posts = site.posts | where_exp: "p","p.published != false" | slice: 0,3 %}
-      {% for post in posts %}
-        <li class="mb-3">
-          <a href="{{ post.url | relative_url }}" class="fw-semibold">{{ post.title }}</a>
-          <span class="text-muted">— {{ post.date | date: "%b %d, %Y" }}</span>
-          {% if post.excerpt %}
-            <div class="small text-muted">{{ post.excerpt | strip_html | truncate: 160 }}</div>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
