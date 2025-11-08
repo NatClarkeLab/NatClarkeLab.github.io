@@ -73,6 +73,7 @@ h3, h4, h5, h6 { line-height: 1.25; }
   object-fit: cover;          /* preserve crop */
   object-position: center;    /* feel free to tune per-image */
 }
+/* =====
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -83,6 +84,7 @@ h3, h4, h5, h6 { line-height: 1.25; }
   pointer-events: none;
   z-index: 1;
 }
+===== */
 .hero-content {
   position: absolute;
   inset: 0;
