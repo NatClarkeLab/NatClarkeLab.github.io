@@ -15,9 +15,9 @@ hero:
       url: /join/
       style: outline-secondary
 
-intro_heading: How cells learned to stick together
+intro_heading: How did the first animal cells stick together?
 intro_text: >
-  We study how cell adhesion evolved to enable multicellularity, combining molecular & cell biology with comparative genomics and computation.
+  Research in our lab is focused on understanding the evolution of multicellularity in animals. In particular, we study the evolution and function of cell adhesion proteins to understand how animal tissues are built. To do this, we utilize a broad range of methods in comparative embryology, cell biology, protein biochemistry, and bioinformatics to explore how cells stick together in non-bilaterian animals (cnidarians, placozoans, sponges and ctenophores).
 
 features:
   - image: https://images.unsplash.com/photo-1616440173663-49fce2cfbabc?q=80&w=1200&auto=format&fit=crop
