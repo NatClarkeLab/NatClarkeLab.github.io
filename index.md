@@ -36,8 +36,8 @@ features:
     url: /research/vitellotag
     alt: Lab bench
 
-<!--
-gallery:
+
+#gallery:
   - src: https://images.unsplash.com/photo-1520671454035-218103cbf3f7?q=80&w=1200&auto=format&fit=crop
     alt: Confocal-like micrograph
     caption: Neural lineage mapping
@@ -45,6 +45,6 @@ gallery:
     alt: Water texture
   - src: https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop
     alt: Blue pattern
--->
+
 
 ---
