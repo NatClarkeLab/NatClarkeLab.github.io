@@ -347,3 +347,16 @@ footer .border-top { border-top: none !important; } /* hide light border if pres
   border-radius: .75rem;
 }
 
+/* News list */
+.news-list { list-style: none; padding: 0; margin: 0; }
+.news-item { padding: .9rem 0; border-top: 1px solid #e5e7eb; }
+.news-item:first-child { border-top: 0; }
+
+.news-head { display: flex; gap: .5rem; flex-wrap: wrap; align-items: baseline; }
+.news-date { color: #64748b; font-size: .95rem; }
+.news-title { font-weight: 600; }
+
+.news-excerpt { margin: .25rem 0 .35rem; color: #334155; }
+.news-links a { text-decoration: none; border-bottom: 1px solid transparent; font-size: .95rem; }
+.news-links a:hover { border-bottom-color: currentColor; }
+
