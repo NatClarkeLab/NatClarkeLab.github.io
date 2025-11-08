@@ -13,7 +13,6 @@
   {% else %}
     <img src="{{ hero.image }}" class="w-100 hero-img" alt="{{ hero.alt | default: 'Hero image' }}">
   {% endif %}
-  <div class="hero-overlay"></div>
   <div class="container-xxl hero-content">
     <div class="col-lg-8">
       <h1 class="display-4 fw-semibold mb-3">{{ hero.heading | default: site.title }}</h1>
