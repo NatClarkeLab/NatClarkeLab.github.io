@@ -7,6 +7,11 @@ title: Resources
   <h1 class="mb-4">Resources</h1>
   <p class="text-muted">Browse lab resources: protocols, code, onboarding, and teaching assets.</p>
 
+## Tools & Apps
+
+- **HCR Probe Generator** — Generate split-probe oPools from a FASTA sequence.  
+  👉 [Open the app]({{ '/apps/hcr/' | relative_url }})
+
   <div class="resources-grid">
     {% assign items = site.resources | sort: "title" %}
     {% for r in items %}
