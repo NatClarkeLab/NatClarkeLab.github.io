@@ -4,22 +4,16 @@ title: Resources
 ---
 
 <div class="container-xxl py-4">
-  <h1 class="mb-4">Resources</h1>
-  <p class="text-muted">Browse lab resources: protocols, code, onboarding, and teaching assets.</p>
+  <h1 class="mb-3">Resources</h1>
+  <p class="text-muted">Protocols, code, onboarding, teaching assets, and tools.</p>
 
-## Tools & Apps
-
-- **HCR Probe Generator** — Generate split-probe oPools from a FASTA sequence.  
-  👉 [Open the app]({{ '/apps/hcr/' | relative_url }})
-
-  <div class="resources-grid">
+  <ul class="list-unstyled" style="line-height:1.7;">
     {% assign items = site.resources | sort: "title" %}
     {% for r in items %}
-      <a class="resource-card" href="{{ r.link | default: r.url }}">
-        {% if r.icon %}<img class="resource-card__icon" src="{{ r.icon }}" alt="">{% endif %}
-        <h3 class="h6 mb-1">{{ r.title }}</h3>
-        <p class="small text-muted mb-0">{{ r.summary }}</p>
-      </a>
+      <li class="mb-1">
+        <a href="{{ r.link | default: r.url }}">{{ r.title }}</a>
+        {% if r.summary %}<span class="text-muted"> — {{ r.summary }}</span>{% endif %}
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 </div>
