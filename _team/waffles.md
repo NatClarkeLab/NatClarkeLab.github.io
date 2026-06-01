@@ -6,6 +6,7 @@ status: current          # or "alumni"
 photo: /assets/images/waffles.jpg
 bio: "#1 good boy"
 email: 
+orcid:
 scholar: 
 bluesky: 
 website: 
